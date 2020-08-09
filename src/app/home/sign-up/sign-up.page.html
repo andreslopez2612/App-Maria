@@ -1,0 +1,42 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Crear cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form action="">
+    <!-- Inputs with labels -->
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nombre:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Apellidos:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo:</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña:</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Fecha Nacimiento:</ion-label>
+        <ion-datetime displayFormat="MM DD YY" placeholder="Seleccione Fecha"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Dirección</ion-label>
+        <ion-input placeholder="Dirección 1"></ion-input>
+        <ion-input placeholder="Direción 2"></ion-input>
+        <ion-input placeholder="Ciudad"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Crear Cuenta</ion-button>
+    </div>
+  </form>
+</ion-content>

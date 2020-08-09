@@ -1,3 +1,49 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-header>
+      <!-- <ion-toolbar color="dark">
+        <ion-title>Market</ion-title>
+      </ion-toolbar> -->
+    </ion-header>
+    <ion-content >
+      <ion-list>
+        <div class="item item-avatar item-fondo">
+          <!-- <img src="https://andreslo.000webhostapp.com/wp-content/uploads/2020/08/logo.jpg"> -->
+        </div>
+        <div *ngFor = "let p of navigate">
+          <ion-menu-toggle *ngIf="p.url">
+              <ion-item *ngIf="p.view" [routerLink]="p.url" routerDirecions="root" routerLinkActivate="active" >
+                <ion-icon  color="tertiary" [name]="p.icon" slot="start"></ion-icon>
+                <ion-label>
+                  {{ p.title }}
+                </ion-label>
+              </ion-item>         
+          </ion-menu-toggle>
+
+          <ion-item button *ngIf="p.children?.length > 0" (click)="p.open = !p.open" 
+            [class.active-parent]="p.open" detail="false">
+            <ion-icon slot="start"  color="tertiary" name="arrow-forward" *ngIf="!p.open"></ion-icon>
+            <ion-icon slot="start"  color="tertiary" name="arrow-down" *ngIf="p.open"></ion-icon>
+              <ion-label>
+                {{ p.title }}
+              </ion-label>
+          </ion-item>
+
+          <ion-list *ngIf="p.open">
+            <ion-menu-toggle>
+              <ion-item class="sub-menu" *ngFor="let sub of p.children" [routerLink]="['/categorias',sub.id]" routerDirecions="root" routerLinkActivate="active">
+                <ion-icon [name]="sub.img" slot="start"></ion-icon>
+                <ion-label>
+                  {{ sub.title }}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+
+        </div>  
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

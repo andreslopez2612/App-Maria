@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar  color="tertiary">
+    <ion-title>{{ categoria.title }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img class="imagen-categoria" [src]="categoria.img" />
+  </ion-card>
+      <div *ngFor="let u of list">
+        <ion-card *ngIf="u.id_categoria === categoria.id">
+          <div *ngFor="let p of u.productos">            
+            <ion-card-header>
+              <ion-card-subtitle>{{ categoria.title }}</ion-card-subtitle>
+              <ion-card-title>{{ p.titulo }}</ion-card-title>
+            </ion-card-header>
+            <img src="https://vilmanunez.com/wp-content/uploads/2018/11/como-hacer-una-propuesta-de-servicios-profesionales-768x384.png"/>
+            <ion-card-content>
+              {{ p.text }}
+              <ion-item>
+                <ion-icon name="build-outline" slot="start"></ion-icon>
+                <ion-label>${{ p.precio }}</ion-label>
+                <ion-button  color="tertiary" slot="end"><ion-icon name="add-outline"></ion-icon></ion-button>
+              </ion-item>
+            </ion-card-content>
+          </div>
+        </ion-card>
+      </div>
+</ion-content>
