@@ -8,6 +8,10 @@ const routes: Routes = [
     component: HomePage,
   },
   // {
+  //   path: 'cart',
+  //   loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  // },
+  // {
   //   path: 'categorias',
   //   loadChildren: () => import('./categorias/categorias.module').then( m => m.CategoriasPageModule)
   // },

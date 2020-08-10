@@ -13,7 +13,7 @@ import { CategoriasService } from './home/categorias/categorias.service';
 })
 export class AppComponent {
   navigate : any;
-  log : boolean=false;
+  log : boolean=true;
   categories : any;
   constructor(
     private platform: Platform,
@@ -56,7 +56,7 @@ export class AppComponent {
       },
       {
         title : "Carrito",
-        url : "/carrito",
+        url : "/cart",
         icon : "cart-outline",
         view : this.log
       },

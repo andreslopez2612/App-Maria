@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  color="tertiary">
+    <ion-title>
+      Resumen de compra
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <div *ngFor="let u of prod">    
+    <ion-card *ngIf="u.id === '4'">      
+      <div *ngFor="let p of u.productos">
+        <ion-item>          
+          <ion-card-title>{{ p.titulo }}</ion-card-title>
+          <ion-card-subtitle slot="end">{{ p.categoria }}</ion-card-subtitle>
+        </ion-item>
+      
+        <ion-card-content>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales libero eget interdum pellentesque. Sed eget consequat purus. In sapien tellus, imperdiet sed tortor a, mollis varius dolor.
+        </ion-card-content>
+        
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-button color="tertiary" slot="start" (click)="add(2,p.precio)">-</ion-button>
+                  <div class="ion-text-center">
+                    <ion-label class="ion-text-center">{{ count }}</ion-label>
+                  </div>
+                  <ion-button color="tertiary" slot="end" (click)="add(1,p.precio)">+</ion-button>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-label class="ion-text-center"> Valor: {{ p.precio }}</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
+      </div>
+      
+    </ion-card>  
+  </div>
+  <div class="ion-text-center">
+    <ion-label class="ion-text-center">{{ total }}</ion-label>
+  </div>
+  <div class="ion-padding">
+    <ion-button color="tertiary" expand="block" type="submit" class="ion-no-margin">Comprar</ion-button>
+  </div>
+</ion-content>
