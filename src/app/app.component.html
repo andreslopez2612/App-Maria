@@ -10,6 +10,13 @@
         <div class="item item-avatar item-fondo">
           <!-- <img src="https://andreslo.000webhostapp.com/wp-content/uploads/2020/08/logo.jpg"> -->
         </div>
+        <div>
+          <ion-item>
+            <ion-card-subtitle class="text-center">
+              Satisfacer las necesidades multiservicios de nuestros clientes, dando una respuesta eficiente, con una excelente relación calidad, precio, y una organización que aporte valor a nuestro cliente estratégico y agilidad a los usuarios de nuestros servicios.
+            </ion-card-subtitle>              
+          </ion-item>
+        </div>
         <div *ngFor = "let p of navigate">
           <ion-menu-toggle *ngIf="p.url">
               <ion-item *ngIf="p.view" [routerLink]="p.url" routerDirecions="root" routerLinkActivate="active" >

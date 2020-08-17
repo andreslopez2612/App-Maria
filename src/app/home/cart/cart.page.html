@@ -14,14 +14,24 @@
     <ion-card *ngIf="u.id === '4'">      
       <div *ngFor="let p of u.productos">
         <ion-item>          
-          <ion-card-title>{{ p.titulo }}</ion-card-title>
+          <ion-card-title color="tertiary">Servicio: </ion-card-title>
+          <ion-card-subtitle slot="end">{{ p.titulo }}</ion-card-subtitle>
+        </ion-item>
+        <ion-item>          
+          <ion-card-title color="tertiary">Categoria: </ion-card-title>
           <ion-card-subtitle slot="end">{{ p.categoria }}</ion-card-subtitle>
         </ion-item>
-      
         <ion-card-content>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales libero eget interdum pellentesque. Sed eget consequat purus. In sapien tellus, imperdiet sed tortor a, mollis varius dolor.
         </ion-card-content>
-        
+        <ion-item>
+          <ion-label color="tertiary">Fecha: </ion-label>
+          <ion-datetime value="" placeholder="Escoge fecha"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label color="tertiary">Hora Servicio: </ion-label>
+          <ion-datetime display-format="h:mm A" placeholder="Escoger hora" picker-format="h:mm A" value=""></ion-datetime>
+        </ion-item>
           <ion-grid>
             <ion-row>
               <ion-col>

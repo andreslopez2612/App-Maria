@@ -31,17 +31,11 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 30000,
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
-        },
-        {
-          id: 2,
-          titulo: "Servicio 2",
-          precio: 150000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
-    },
+    },    
     {
       id: "3",
       id_categoria: "3",
@@ -49,7 +43,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 40000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
@@ -61,7 +55,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 50000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
@@ -73,7 +67,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 60000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
@@ -85,7 +79,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 70000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
@@ -97,7 +91,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 80000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
@@ -109,19 +103,7 @@ export class CatDetailPage implements OnInit {
         {
           id: 1,
           titulo: "Servicio 1",
-          precio: 90000,
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
-        }
-      ]
-    },
-    {
-      id: "9",
-      id_categoria: "9",
-      productos: [
-        {
-          id: 1,
-          titulo: "Servicio 1",
-          precio: 100000,
+          precio: 20000,
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nisl quis nunc laoreet pharetra. Nam eu suscipit felis. Ut commodo fringilla ligula, a dapibus nisi mollis eget."
         }
       ]
